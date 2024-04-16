@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+//$unit1: 0.25rem;
+:root {
+  --body-bg-color: gray;
+  --unit1: 1rem;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  font-size: var(--unit1);
+}
+
+

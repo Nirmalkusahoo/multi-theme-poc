@@ -1,0 +1,14 @@
+.title{
+  color: var(--title-color);
+  font-weight: 900;
+  font-size: 30px;
+}
+.custom-button{
+  background-color: var(--button-bg-color);
+  border-color: var(--button-border-color);
+  color: var(--button-text-color);
+}
+.magic-box{
+  background-color: var(--magic-box-bg-color);
+  color: var(--magic-box-text-color);
+}
