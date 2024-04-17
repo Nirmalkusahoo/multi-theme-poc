@@ -1,4 +1,16 @@
-<h1>Changing Theme using CSS class</h1>
-<button (click)="changeTheme(true)">Add Digital</button>
-<br>
-<button (click)="changeTheme(false)">Remove Digital</button>
+<div class="container">
+  <h1>Changing Theme using CSS class</h1>
+  <div *ngIf="environment.showTheme;else other" class="btns">
+    <mat-slide-toggle (change)="onDigitalChange($event)"
+                      [(ngModel)]="isDigital">Digital</mat-slide-toggle>
+    <mat-slide-toggle (change)="onBAHChange($event)"
+                      [(ngModel)]="isBAH">SAP BAH</mat-slide-toggle>
+    <!--  <button (click)="changeTheme(true)">Add Digital</button>
+      <br>
+      <button (click)="changeTheme(false)">Remove Digital</button>-->
+  </div>
+  <ng-template #other>
+    <h2>Theme option is disabled</h2>
+  </ng-template>
+</div>
+
