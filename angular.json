@@ -32,8 +32,12 @@
             "styles": [
               "@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.scss",
-              "src/digital.scss",
-              "src/bah.scss"
+              {
+                "input": "src/first-theme.scss",
+                "bundleName": "first-theme",
+                "inject": false
+              },
+              "src/second-theme.scss"
             ],
             "scripts": []
           },
